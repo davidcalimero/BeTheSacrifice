@@ -69,7 +69,7 @@ public class SpawnableGameObjects : MonoBehaviour
         }
     }
 
-    void RemoveWeapon()
+    public void RemoveWeapon()
     {
         weaponNumber--;
     }
