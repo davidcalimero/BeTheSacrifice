@@ -3,16 +3,24 @@
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
 
-class Character : MonoBehaviour
+class Actuator : MonoBehaviour
 {
     public float runSpeed = 5;
 
-    //Character state
     private bool facingRight = true;
-    private Vector3 direction;
-
     private Rigidbody body;
     private Animator animator;
+
+    private Vector3 direction;
+    public Vector3 Direction
+    {
+        get
+        {
+            if (direction.magnitude == 0)
+                return transform.right;
+            return direction.normalized;
+        }
+    }
     
     void Awake()
     {
@@ -40,7 +48,7 @@ class Character : MonoBehaviour
 
     public void Push(Vector3 theForce)
     {
-        this.body.AddForce(theForce);
+        body.AddForce(theForce, ForceMode.Impulse);
     }
 
     private void Flip()
