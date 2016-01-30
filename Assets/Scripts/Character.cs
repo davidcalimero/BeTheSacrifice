@@ -41,8 +41,6 @@ class Character : MonoBehaviour
     private void Flip()
     {
         facingRight = !facingRight;
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
+        transform.Rotate(new Vector3(0, 180, 0));
     }
 }

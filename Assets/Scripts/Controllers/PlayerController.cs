@@ -2,33 +2,36 @@
 
 [RequireComponent(typeof(Character))]
 
-class PlayerController : MonoBehaviour
+class PlayerController : MonoBehaviour, IPlayerController
 {
     private Character character;
-    private Inventory iventory;
+    private Inventory inventory;
+
+    public Vector3 Position { get { return transform.position; } }
+
     private Vector3 direction;
+    public Vector3 Direction
+    {
+        get
+        {
+            if (direction.magnitude == 0)
+                return transform.right;
+            return direction.normalized;
+        }
+    }
 
     void Awake()
     {
         character = GetComponent<Character>();
-        iventory = GetComponent<Inventory>();
-        direction = transform.forward;
+        inventory = GetComponent<Inventory>();
+        direction = transform.right;
     }
 
     void Update()
     {
-        Move();
-        UseItems();
-    }
-
-    private void Move()
-    {
         direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         character.Move(direction);
-    }
 
-    private void UseItems()
-    {
         if (Input.GetButtonDown("Fire1"))
         {
             UseItem("Fire1");
@@ -41,12 +44,10 @@ class PlayerController : MonoBehaviour
 
     private void UseItem(string inputKey)
     {
-        IItem item = iventory.RequestItem(inputKey);
+        IItem item = inventory.RequestItem(inputKey);
         if (item != null)
         {
-            Vector3 position = transform.position;
-            position.y = 1;
-            item.Use(position, direction);
+            item.Use(this);
         }
     }
 }

@@ -2,8 +2,10 @@
 
 class Inventory : MonoBehaviour
 {
+    public GameObject item;
+
     public IItem RequestItem(string inputKey)
     {
-        return null;
+        return item.GetComponent<IItem>();
     }
 }
