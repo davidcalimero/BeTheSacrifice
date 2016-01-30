@@ -12,7 +12,7 @@ class Item : MonoBehaviour, IItem
         return null;
     }
 
-    public void Use(IPlayerController player)
+    public void Use(IPlayer player)
     {
         Vector3 position = player.Position;
         position.y += 1;
