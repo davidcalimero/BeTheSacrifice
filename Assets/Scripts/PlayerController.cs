@@ -11,17 +11,12 @@ class PlayerController : MonoBehaviour
         character = GetComponent<Character>(); 
     }
 
-    void FixedUpdate()
+    void Update()
     {
         Move();
     }
 
-    void Update()
-    {
-
-    }
-
-    protected void Move()
+    private void Move()
     {
         Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         character.Move(direction);

@@ -38,7 +38,7 @@ class Character : MonoBehaviour
         this.direction = direction;
     }
 
-    protected void Flip()
+    private void Flip()
     {
         facingRight = !facingRight;
         Vector3 scale = transform.localScale;
