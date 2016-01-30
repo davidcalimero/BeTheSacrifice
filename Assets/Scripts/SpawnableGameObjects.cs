@@ -9,6 +9,10 @@ public class SpawnableGameObjects : MonoBehaviour
     private int weaponNumber = 0;
     float yMinRange = 1;
     float yMaxRange = 1;
+    float zMinRange = -20;
+    float zMaxRange = 20;
+    float xMinRange = -20;
+    float xMaxRange = 20;
     public int maxWpnNumber = 15;
 
     //area circular variaveis
@@ -48,11 +52,12 @@ public class SpawnableGameObjects : MonoBehaviour
         if (weaponNumber <= maxWpnNumber)
         {
             //random coordinate in a circular area
-            newposition = Random.insideUnitCircle * 5;
-            spawnPosition.x = newposition.x;
+           
+            spawnPosition.x = Random.Range(xMinRange, xMaxRange);
             spawnPosition.y = 1;
-            spawnPosition.z = newposition.z;
+            spawnPosition.z = Random.Range(zMinRange, zMaxRange);
 
+            Debug.Log(spawnPosition);
             //determine which object
             if(spawnObjects.Length > 0){
                 int objectToSpawn = Random.Range(0, spawnObjects.Length);
