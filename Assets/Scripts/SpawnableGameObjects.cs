@@ -43,12 +43,10 @@ public class SpawnableGameObjects : MonoBehaviour
 
     void MakeWeapon()
     {
-
         Vector3 spawnPosition;
 
         if (weaponNumber <= maxWpnNumber)
         {
-
             //random coordinate in a circular area
             newposition = Random.insideUnitCircle * 5;
             spawnPosition.x = newposition.x;
@@ -56,16 +54,10 @@ public class SpawnableGameObjects : MonoBehaviour
             spawnPosition.z = newposition.z;
 
             //determine which object
-
-            if(spawnObjects.Length > 0)
-            {
+            if(spawnObjects.Length > 0){
                 int objectToSpawn = Random.Range(0, spawnObjects.Length);
                 Instantiate(spawnObjects[objectToSpawn], spawnPosition, new Quaternion());
             }
-           
-
-            //indexar ao Pai
-            //spawnedObject.transform.parent = gameObject.transform;
 
             //My NUMBER IS!!!
             weaponNumber++;
@@ -77,4 +69,3 @@ public class SpawnableGameObjects : MonoBehaviour
         weaponNumber--;
     }
 }
-
