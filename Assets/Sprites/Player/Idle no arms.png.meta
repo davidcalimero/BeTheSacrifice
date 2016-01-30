@@ -1,0 +1,86 @@
+fileFormatVersion: 2
+guid: 55d3a52362c459d47997119d8d085315
+timeCreated: 1454180998
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Idle no arms_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 275
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Idle no arms_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 109.5}
+        - {x: -31.5, y: 97.5}
+        - {x: -31.5, y: -109.5}
+        - {x: 33.5, y: -109.5}
+        - {x: 38.5, y: -76.5}
+        - {x: 38.5, y: 96.5}
+        - {x: 30.5, y: 109.5}
+      - - {x: -34.5, y: -13.5}
+        - {x: -31.5, y: -12.5}
+        - {x: -31.5, y: -9.5}
+        - {x: -34.5, y: -8.5}
+        - {x: -36.5, y: -10.5}
+      - - {x: -34.5, y: -2.5}
+        - {x: -31.5, y: -0.5}
+        - {x: -34.5, y: 4.5}
+        - {x: -37.5, y: 3.5}
+        - {x: -37.5, y: 0.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
