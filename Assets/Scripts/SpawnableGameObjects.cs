@@ -19,7 +19,6 @@ public class SpawnableGameObjects : MonoBehaviour
 
     void Awake()
     {
-        //
         Instance = this;
     }
 
@@ -57,13 +56,13 @@ public class SpawnableGameObjects : MonoBehaviour
             spawnPosition.z = newposition.z;
 
             //determine which object
-            int objectToSpawn = Random.Range(0, spawnObjects.Length);
-            Debug.Log(objectToSpawn);
 
-            //actually spawn game object
-            GameObject var = spawnObjects[objectToSpawn];
-            Debug.Log(var);
-            Instantiate(var, spawnPosition, new Quaternion());
+            if(spawnObjects.Length > 0)
+            {
+                int objectToSpawn = Random.Range(0, spawnObjects.Length);
+                Instantiate(spawnObjects[objectToSpawn], spawnPosition, new Quaternion());
+            }
+           
 
             //indexar ao Pai
             //spawnedObject.transform.parent = gameObject.transform;
@@ -77,7 +76,5 @@ public class SpawnableGameObjects : MonoBehaviour
     {
         weaponNumber--;
     }
-
-
 }
 

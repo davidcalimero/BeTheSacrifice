@@ -56,8 +56,6 @@ class Player : MonoBehaviour, IPlayer
             UseItem("Fire2");
         }
 
-        Debug.Log(canPush);
-
         if (Input.GetButtonDown("Push" + Id) && canPush)
         {
             Vector3 directionToPush = (opponent.transform.position - this.gameObject.transform.position).normalized;
