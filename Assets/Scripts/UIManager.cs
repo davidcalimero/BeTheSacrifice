@@ -7,7 +7,6 @@ public class UIManager : MonoBehaviour {
 	public Texture2D lifeBar;
 	public float lifebarSize;
 	private float barWidth = 30.0f;
-	private float widthFix = 5.0f;
 
 	void Start(){
 		//_playerCharacter = this.gameObject.GetComponent <Player> ();
