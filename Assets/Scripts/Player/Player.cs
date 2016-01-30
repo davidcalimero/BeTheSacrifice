@@ -18,7 +18,6 @@ class Player : MonoBehaviour, IPlayer
     public float LifeAmmount
     {
         get { return lifeAmmount; }
-        set { lifeAmmount = Math.Max(value, 0); }
     }
 
     public Vector3 Position { get { return transform.position; } }
@@ -49,11 +48,11 @@ class Player : MonoBehaviour, IPlayer
 
         if (Input.GetButtonDown("Fire1" + Id))
         {
-            UseItem("Fire1");
+            UseItem(0);
         }
         else if (Input.GetButtonDown("Fire2" + Id))
         {
-            UseItem("Fire2");
+            UseItem(1);
         }
 
         if (Input.GetButtonDown("Push" + Id) && canPush)
@@ -63,13 +62,23 @@ class Player : MonoBehaviour, IPlayer
         }
     }
 
-    private void UseItem(string inputKey)
+    public void ChangeLife(float ammount)
     {
-        IItem item = inventory.RequestItem(inputKey);
+        lifeAmmount += ammount;
+    }
+
+    private void UseItem(uint itemSlot)
+    {
+        IItem item = inventory.useItem(itemSlot);
         if (item != null)
         {
             item.Use(this);
         }
+    }
+
+    public bool PickUp(IItem item)
+    {
+        return inventory.addItem(item);
     }
 
     void OnTriggerEnter(Collider col)

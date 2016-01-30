@@ -128,6 +128,10 @@ Prefab:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 1876834685}
+    - target: {fileID: 142364, guid: 23eabb351a93bdb42bc96485e1792c95, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23eabb351a93bdb42bc96485e1792c95, type: 2}
   m_IsPrefabParent: 0
@@ -135,6 +139,33 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 134708, guid: 23eabb351a93bdb42bc96485e1792c95, type: 2}
   m_PrefabInternal: {fileID: 730898710}
+--- !u!1 &1537111852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1537111853}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1537111853
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1537111852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.994685, y: 0.30807865, z: 4.7718663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &1779368427
 GameObject:
   m_ObjectHideFlags: 0
