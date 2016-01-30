@@ -9,7 +9,7 @@ class Character : MonoBehaviour
 
     //Character state
     private bool facingRight = true;
-    private Vector2 direction;
+    private Vector3 direction;
 
     private Rigidbody body;
     private Animator animator;
@@ -30,10 +30,10 @@ class Character : MonoBehaviour
             Flip();
         }
 
-        body.velocity = new Vector3(direction.x, 0, direction.y) * runSpeed;
+        body.velocity = direction * runSpeed;
     }
 
-    public void Move(Vector2 direction)
+    public void Move(Vector3 direction)
     {
         this.direction = direction;
     }
