@@ -38,6 +38,11 @@ class Character : MonoBehaviour
         this.direction = direction;
     }
 
+    public void Push(Vector3 theForce)
+    {
+        this.body.AddForce(theForce);
+    }
+
     private void Flip()
     {
         facingRight = !facingRight;
