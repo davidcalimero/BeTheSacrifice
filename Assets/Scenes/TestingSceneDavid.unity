@@ -124,6 +124,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11465916, guid: 23eabb351a93bdb42bc96485e1792c95, type: 2}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 1876834685}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23eabb351a93bdb42bc96485e1792c95, type: 2}
   m_IsPrefabParent: 0
@@ -165,6 +169,22 @@ Prefab:
     - target: {fileID: 406938, guid: 07ab10e38ac7a3847972c6eb66c96227, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483204, guid: 07ab10e38ac7a3847972c6eb66c96227, type: 2}
+      propertyPath: cratePrefab
+      value: Prefabs/Items/Crate
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483204, guid: 07ab10e38ac7a3847972c6eb66c96227, type: 2}
+      propertyPath: spawnableObjects.Array.data[2]
+      value: Prefabs/Items/Seringa
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483204, guid: 07ab10e38ac7a3847972c6eb66c96227, type: 2}
+      propertyPath: spawnableObjects.Array.data[1]
+      value: Prefabs/Items/Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483204, guid: 07ab10e38ac7a3847972c6eb66c96227, type: 2}
+      propertyPath: spawnableObjects.Array.data[0]
+      value: Prefabs/Items/Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07ab10e38ac7a3847972c6eb66c96227, type: 2}
@@ -348,6 +368,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bceec682b921524dbfba0a94083e79f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1876834685 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 153104, guid: 1bceec682b921524dbfba0a94083e79f, type: 2}
+  m_PrefabInternal: {fileID: 1876834684}
 --- !u!1 &2056296500
 GameObject:
   m_ObjectHideFlags: 0

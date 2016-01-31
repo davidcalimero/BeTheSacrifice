@@ -9,6 +9,7 @@ class Player : MonoBehaviour, IPlayer
     public int pushForce = 100000;
     public int Id = 1;
     public GameObject opponent;
+    public GameObject arm;
 
     private bool canPush = false;
     private Actuator actuator;
@@ -79,6 +80,14 @@ class Player : MonoBehaviour, IPlayer
     public bool PickUp(IItem item)
     {
         return inventory.addItem(item);
+    }
+
+    public Animator ArmAnimator
+    {
+        get
+        {
+            return arm.GetComponent<Animator>();
+        }
     }
 
     void OnTriggerEnter(Collider col)

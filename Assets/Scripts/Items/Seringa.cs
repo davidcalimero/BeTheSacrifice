@@ -1,14 +1,8 @@
 ﻿using UnityEngine;
 
-class Banana : MonoBehaviour, IItem
+class Seringa : MonoBehaviour, IItem
 {
-    public string prefabPath;
-    public float force = 10;
-    public float damage = 20;
-
     private Texture2D texture;
-
-    public bool Used = false;
 
     void Awake()
     {
@@ -25,12 +19,11 @@ class Banana : MonoBehaviour, IItem
         return texture;
     }
 
+    IPlayer player;
     public void Use(IPlayer player)
     {
-        Vector3 position = player.Position + player.Direction * 0.4f;
-        GameObject instance = Instantiate(Resources.Load(prefabPath), position, new Quaternion()) as GameObject;
-        instance.GetComponent<Rigidbody>().AddForce(player.Direction * force, ForceMode.Impulse);
-        instance.GetComponent<Banana>().Used = true;
+        player.ArmAnimator.SetTrigger("seringa");
+        StartCoroutine(Utils.ExecuteAfterTime(() => player.ArmAnimator.ResetTrigger("seringa"), 2));
     }
 
     void OnCollisionEnter(Collision collision)
@@ -38,19 +31,10 @@ class Banana : MonoBehaviour, IItem
         if (collision.collider.gameObject.tag == "Player")
         {
             IPlayer player = collision.collider.gameObject.GetComponent<IPlayer>();
-            if (Used)
-            {
-                player.ChangeLife(-damage);
-            }
-
-            if (Used || player.PickUp(this))
+            if (player.PickUp(this))
             {
                 Destroy();
             }
-        }
-        else if(Used)
-        {
-            Destroy();
         }
         else
         {

@@ -45,6 +45,7 @@ MonoBehaviour:
   spawnableObjects:
   - {fileID: 101900, guid: 3f2f49375a63d294aa42480ba033918e, type: 2}
   - {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
+  - {fileID: 188728, guid: 212b602e94dc4a84889b2f9052685e2d, type: 2}
   cratePrefab: {fileID: 188728, guid: b759782f41f67924489f551a0d12c523, type: 2}
 --- !u!1001 &100100000
 Prefab:
@@ -55,7 +56,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: spawnableObjects.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: spawnableObjects.Array.data[1]
@@ -64,7 +65,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: spawnableObjects.Array.data[2]
       value: 
-      objectReference: {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
+      objectReference: {fileID: 188728, guid: 212b602e94dc4a84889b2f9052685e2d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193976}

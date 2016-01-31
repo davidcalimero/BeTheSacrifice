@@ -6,4 +6,5 @@ interface IPlayer
     Vector3 Position { get; }
     bool PickUp(IItem item);
     void ChangeLife(float ammount);
+    Animator ArmAnimator { get; }
 }

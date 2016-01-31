@@ -3,7 +3,7 @@
 class Rock : MonoBehaviour, IItem
 {
     public string prefabPath;
-    public float velocity = 10;
+    public float force = 10;
     public float damage = 20;
 
     private Texture2D texture;
@@ -29,7 +29,7 @@ class Rock : MonoBehaviour, IItem
     {
         Vector3 position = player.Position + player.Direction * 0.4f;
         GameObject instance = Instantiate(Resources.Load(prefabPath), position, new Quaternion()) as GameObject;
-        instance.GetComponent<Rigidbody>().velocity = player.Direction * velocity;
+        instance.GetComponent<Rigidbody>().AddForce(player.Direction * force, ForceMode.Impulse);
         instance.GetComponent<Rock>().Used = true;
     }
 
