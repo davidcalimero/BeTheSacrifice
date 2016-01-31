@@ -22,19 +22,22 @@ class Board : MonoBehaviour, IItem {
 
 	public void Use(IPlayer player)
 	{
+		player.ArmAnimator.SetTrigger ("board");
 		player.ChangeLife(lifeGainAmmount);
 	}
 
 	void OnCollisionEnter(Collision collision)
 	{
-		if (collision.collider.gameObject.tag == "Player")
-		{
-			IPlayer player = collision.collider.gameObject.GetComponent<IPlayer>();
+		Debug.Log ("Her2e");
+		if (collision.collider.gameObject.tag == "Player") {
+			Debug.Log ("Here");
+			IPlayer player = collision.collider.gameObject.GetComponent<IPlayer> ();
 
-			if (player.PickUp(this))
-			{
-				DestroyI();
+			if (player.PickUp (this)) {
+				DestroyI ();
 			}
+		} else {
+			Debug.Log ("not a player");
 		}
 	}
 
