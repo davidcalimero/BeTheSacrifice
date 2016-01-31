@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-class MainMenu : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-    void Update()
+    public void loadLevel()
     {
-        if (Input.anyKey)
-            SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);
     }
 }
