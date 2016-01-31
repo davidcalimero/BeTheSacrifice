@@ -10,7 +10,13 @@ class Utils{
         while (true)
         {
             yield return new WaitForSeconds(deltaTime);
-            method.DynamicInvoke();
+            ExecuteAfterTime(method, deltaTime);
         }
+    }
+
+    public static IEnumerator ExecuteAfterTime(Subroutine method, float deltaTime)
+    {
+        yield return new WaitForSeconds(deltaTime);
+        method.DynamicInvoke();
     }
 }
