@@ -9,7 +9,9 @@ class Crate : MonoBehaviour{
     public GameObject Item;
 
     void OnTriggerEnter(Collider col){
-        Instantiate(Item, transform.position, new Quaternion());
+        Vector3 position = transform.position;
+        position.y += 0.5f;
+        Instantiate(Item, position, new Quaternion());
         Destroy(gameObject); 
     }
 }

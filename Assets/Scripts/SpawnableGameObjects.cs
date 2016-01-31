@@ -48,7 +48,7 @@ public class SpawnableGameObjects : MonoBehaviour{
     void Start()
     {
         //determinar o spawn do proximo objecto
-        StartCoroutine(Utils.CreateLoopCoroutine(MakeWeapon, spawningItemDelay));
+        //StartCoroutine(Utils.CreateLoopCoroutine(MakeWeapon, spawningItemDelay));
         
         //determinar o spawn da proxima Crate
         StartCoroutine(Utils.CreateLoopCoroutine(MakeCrate, spawningCrateDelay));

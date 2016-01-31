@@ -51,17 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7ca716d9619e734f91674e8f62c0b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningItemDelay: 3
-  spawningCrateDelay: 5
-  maxWpnNumber: 20
-  spawnableObjects:
-  - {fileID: 101900, guid: 3f2f49375a63d294aa42480ba033918e, type: 2}
-  - {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
-  - {fileID: 188728, guid: 212b602e94dc4a84889b2f9052685e2d, type: 2}
-  spawnChance:
-  - 33
-  - 33
-  - 34
+  spawningItemDelay: 0
+  spawningCrateDelay: 2
+  maxWpnNumber: 6
+  spawnableObjects: []
+  spawnChance: []
   cratePrefab: {fileID: 188728, guid: b759782f41f67924489f551a0d12c523, type: 2}
   Cratesitems:
   - {fileID: 101900, guid: ac6fd02e805fc8b40a028b09eb84a208, type: 2}
@@ -69,9 +63,9 @@ MonoBehaviour:
   - {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
   - {fileID: 188728, guid: 212b602e94dc4a84889b2f9052685e2d, type: 2}
   spawnChanceCrate:
-  - 30
-  - 30
-  - 30
+  - 10
+  - 40
+  - 40
   - 10
 --- !u!1001 &100100000
 Prefab:

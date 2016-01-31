@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabPath: Prefabs/Items/Rock
-  force: 10
+  force: 15
   damage: 20
   Used: 0
 --- !u!135 &13598300
@@ -233,6 +233,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: force
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
