@@ -64,6 +64,14 @@ class Player : MonoBehaviour, IPlayer
         {
             UseItem(1);
         }
+        else if (Input.GetButtonDown("Fire3" + Id))
+        {
+            UseItem(2);
+        }
+        else if (Input.GetButtonDown("Fire4" + Id))
+        {
+            UseItem(3);
+        }
 
         if (Input.GetButtonDown("Push" + Id) && NearEnimy != null)
         {
