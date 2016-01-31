@@ -2,7 +2,8 @@
 
 interface IPlayer
 {
-    float LifeAmmount { get; set; }
     Vector3 Direction { get; }
     Vector3 Position { get; }
+    bool PickUp(IItem item);
+    void ChangeLife(float ammount);
 }

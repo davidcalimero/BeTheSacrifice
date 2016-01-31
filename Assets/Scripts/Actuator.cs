@@ -33,7 +33,7 @@ class Actuator : MonoBehaviour
         //Update animations
         animator.SetFloat("Speed", direction.magnitude);
 
-        if ((body.velocity.x > 0 && !facingRight) || (body.velocity.x < 0 && facingRight))
+        if ((direction.x > 0 && !facingRight) || (direction.x < 0 && facingRight))
         {
             Flip();
         }
