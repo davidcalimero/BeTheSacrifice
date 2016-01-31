@@ -72,7 +72,24 @@ class Player : MonoBehaviour, IPlayer
 
     public void ChangeLife(float ammount)
     {
+        if (lifeAmmount == 0 && ammount > 0)
+        {
+            GameManager.Instance.PlayerItsAlive();
+        }
+
         lifeAmmount += ammount;
+        if (lifeAmmount <= 0) lifeAmmount = 0;
+        if (lifeAmmount >= maxLife) lifeAmmount = maxLife;
+
+        if (lifeAmmount == 0)
+        {
+            GameManager.Instance.PlayerDeath();
+        }
+
+        if(ammount > 0)
+        {
+            this.gameObject.GetComponentInChildren<Animator>().SetTrigger("activated");
+        }
     }
 
     private void UseItem(uint itemSlot)
