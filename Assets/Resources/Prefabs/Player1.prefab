@@ -670,6 +670,7 @@ MonoBehaviour:
   Id: 1
   arm: {fileID: 194592}
   particleHeal: {fileID: 153888}
+  Blood: {fileID: 19894334}
 --- !u!135 &13508244
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -10013,6 +10014,10 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Blood
+      value: 
+      objectReference: {fileID: 19894334}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185194}
