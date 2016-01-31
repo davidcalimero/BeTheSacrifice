@@ -44,6 +44,7 @@ MonoBehaviour:
   maxWpnNumber: 20
   spawnableObjects:
   - {fileID: 101900, guid: 3f2f49375a63d294aa42480ba033918e, type: 2}
+  - {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
   cratePrefab: {fileID: 188728, guid: b759782f41f67924489f551a0d12c523, type: 2}
 --- !u!1001 &100100000
 Prefab:
@@ -51,7 +52,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: spawnableObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spawnableObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
+    - target: {fileID: 0}
+      propertyPath: spawnableObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193976}
