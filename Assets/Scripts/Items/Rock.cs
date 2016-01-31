@@ -25,8 +25,10 @@ class Rock : MonoBehaviour, IItem
         return texture;
     }
 
+    private string playerName;
     public void Use(IPlayer player)
     {
+        playerName = player.Name;
         Vector3 position = player.Position + player.Direction * 0.4f;
         GameObject instance = Instantiate(Resources.Load(prefabPath), position, new Quaternion()) as GameObject;
         instance.GetComponent<Rigidbody>().AddForce(player.Direction * force, ForceMode.Impulse);
@@ -35,7 +37,7 @@ class Rock : MonoBehaviour, IItem
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && playerName != collision.gameObject.name)
         {
             IPlayer player = collision.collider.gameObject.GetComponent<IPlayer>();
             if (Used)

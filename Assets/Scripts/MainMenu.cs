@@ -6,6 +6,6 @@ class MainMenu : MonoBehaviour
     void Update()
     {
         if (Input.anyKey)
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
     }
 }
