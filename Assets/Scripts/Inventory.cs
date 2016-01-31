@@ -6,9 +6,9 @@ class Inventory : MonoBehaviour
 
 	public Texture2D itemSlotBorder;
 
-	private float iconSpace = 30.0f;
+	private float iconSpace = 70.0f;
 	private float xOffset = 15.0f;
-	private float iconSize = 30.0f;
+	private float iconSize = 70.0f;
 
 	public IItem[] inventoryPlayer = new IItem[MAX_ITEMS];
 

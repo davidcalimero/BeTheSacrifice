@@ -2,6 +2,7 @@
 
 interface IPlayer
 {
+	string Name { get;}
     Vector3 Direction { get; }
     Vector3 Position { get; }
     bool PickUp(IItem item);

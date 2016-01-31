@@ -26,6 +26,8 @@ class Player : MonoBehaviour, IPlayer
         get { return lifeAmmount; }
     }
 
+	public string Name {get{ return name;}}
+
     public Vector3 Position { get { return transform.position; } }
 
     private Vector3 direction;
