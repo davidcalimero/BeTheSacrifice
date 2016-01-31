@@ -1,42 +1,42 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &186068
+--- !u!1 &113006
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 471000}
-  - 212: {fileID: 21212428}
-  - 54: {fileID: 5492708}
-  - 135: {fileID: 13500254}
-  - 114: {fileID: 11417796}
+  - 4: {fileID: 441574}
+  - 212: {fileID: 21277632}
+  - 54: {fileID: 5436014}
+  - 135: {fileID: 13547720}
+  - 114: {fileID: 11471968}
   m_Layer: 0
-  m_Name: Prayer
+  m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &471000
+--- !u!4 &441574
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186068}
+  m_GameObject: {fileID: 113006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.41428, y: 1.52776, z: -0.07244396}
+  m_LocalPosition: {x: 4.2, y: 1.52776, z: 2.25}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!54 &5492708
+--- !u!54 &5436014
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186068}
+  m_GameObject: {fileID: 113006}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -46,35 +46,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &11417796
+--- !u!114 &11471968
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186068}
+  m_GameObject: {fileID: 113006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bab1da81de311b4bac4e894966c40c5, type: 3}
+  m_Script: {fileID: 11500000, guid: eb48fa1d38248a447818220877a8d81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &13500254
+--- !u!135 &13547720
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186068}
+  m_GameObject: {fileID: 113006}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!212 &21212428
+  m_Center: {x: 0, y: -0.18, z: 0}
+--- !u!212 &21277632
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186068}
+  m_GameObject: {fileID: 113006}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2a0ad2d522e354949affc8030260abd9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2e0923c79a2a9d41bfde0ffeec56eb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,12 +105,8 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 186068}
+  m_RootGameObject: {fileID: 113006}
   m_IsPrefabParent: 1

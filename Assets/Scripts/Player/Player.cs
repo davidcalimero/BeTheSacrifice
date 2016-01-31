@@ -50,6 +50,8 @@ class Player : MonoBehaviour, IPlayer
 
     void Update()
     {
+        if (actuator.IsOnFallState)
+           return;
 
         direction = new Vector3(Input.GetAxis("Horizontal" + Id), 0, Input.GetAxis("Vertical" + Id));
         actuator.Move(direction);
@@ -65,14 +67,45 @@ class Player : MonoBehaviour, IPlayer
 
         if (Input.GetButtonDown("Push" + Id) && NearEnimy != null)
         {
+            Animator enemyAnimator = NearEnimy.GetComponent<Animator>();
             Vector3 directionToPush = (NearEnimy.transform.position - gameObject.transform.position).normalized;
             NearEnimy.GetComponent<Actuator>().Push(directionToPush * pushForce);
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.Empurrar, 1f);
+
         }
     }
 
     public void ChangeLife(float ammount)
     {
+        if (ammount < 0)
+        {
+            ArmAnimator.SetTrigger("damage");
+        }
+        else if (lifeAmmount == 0 && ammount > 0)
+        {
+            GameManager.Instance.PlayerItsAlive();
+        }
+
         lifeAmmount += ammount;
+        if (lifeAmmount <= 0) lifeAmmount = 0;
+        if (lifeAmmount >= maxLife) lifeAmmount = maxLife;
+
+        if (lifeAmmount == 0)
+        {
+            GameManager.Instance.PlayerDeath();
+        }
+
+        if(ammount > 0)
+        {
+            this.gameObject.GetComponentInChildren<Animator>().SetTrigger("activated");
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.GetHealth, 1f);
+
+        }
+
+        if (ammount < 0)
+        {
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.CharacterDamageVoice, 1f);
+        }
     }
 
     private void UseItem(uint itemSlot)
@@ -86,6 +119,7 @@ class Player : MonoBehaviour, IPlayer
 
     public bool PickUp(IItem item)
     {
+        this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.PickupItem, 1f);
         return inventory.addItem(item);
     }
 
