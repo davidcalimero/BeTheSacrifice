@@ -6,12 +6,10 @@ class Crate : MonoBehaviour{
 
     // Which prefab drops down
     // PELO AMOR DA SANTA NAO METER NADA!!!!!
-    public GameObject Weapon;
+    public GameObject Item;
 
-    void OnTriggerEnter(Collider Col){
-
-        Instantiate(Weapon, transform.position, new Quaternion());
-        Destroy(gameObject);
-        
+    void OnTriggerEnter(Collider col){
+        Instantiate(Item, transform.position, new Quaternion());
+        Destroy(gameObject); 
     }
 }

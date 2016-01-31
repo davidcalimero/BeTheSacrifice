@@ -15,6 +15,11 @@ class Banana : MonoBehaviour, IItem
         texture = GetComponent<SpriteRenderer>().sprite.texture;
     }
 
+    void Start()
+    {
+        SpawnableGameObjects.Instance.IncrementItem();
+    }
+
     public Texture2D getIcon()
     {
         return texture;
@@ -40,16 +45,22 @@ class Banana : MonoBehaviour, IItem
 
             if (Used || player.PickUp(this))
             {
-                Destroy(gameObject);
+                Destroy();
             }
         }
         else if(Used)
         {
-            Destroy(gameObject);
+            Destroy();
         }
         else
         {
             GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
+    }
+
+    public void Destroy()
+    {
+        SpawnableGameObjects.Instance.DecrementItem();
+        Destroy(gameObject);
     }
 }

@@ -6,19 +6,19 @@ public class SpawnableGameObjects : MonoBehaviour{
     public static SpawnableGameObjects Instance;
 
     //Inicializar variaveis
-    public float secondsBetweenSpawning = 3.0f;
-    public float secondsBetweenSpawningCrate = 5.0f;
+    public float spawningItemDelay = 3.0f;
+    public float spawningCrateDelay = 5.0f;
 
     private int weaponNumber = 0;
-    float zMinRange = -20;
-    float zMaxRange = 20;
-    float xMinRange = -20;
-    float xMaxRange = 20;
-    public int maxWpnNumber = 15;
+    float zMinRange = -3.5f;
+    float zMaxRange = 5;
+    float xMinRange = -1;
+    float xMaxRange = 6;
+    public int maxWpnNumber = 20;
 
     //prefab
-    public GameObject[] spawnObjects;
-    public GameObject Crate;
+    public GameObject[] spawnableObjects;
+    public GameObject cratePrefab;
 
     private float nextSpawnTime;
     private Vector3 newposition;
@@ -32,77 +32,64 @@ public class SpawnableGameObjects : MonoBehaviour{
     void Start()
     {
         //determinar o spawn do proximo objecto
-        StartCoroutine(Utils.CreateLoopCoroutine(MakeWeapon, secondsBetweenSpawning));
+        StartCoroutine(Utils.CreateLoopCoroutine(MakeWeapon, spawningItemDelay));
         
         //determinar o spawn da proxima Crate
-        StartCoroutine(Utils.CreateLoopCoroutine(MakeCrate, secondsBetweenSpawningCrate));
-    }
-
-    //update entre frames
-    void Update()
-    {
-        /*  SOMETHING IS MISSING KEEP THIS CODE FOR ENDING OR ELSE MOAR SPAWN
-                //sair quando acabar no game manager e o jogo acabar
-                if(GameManager.gm){
-                    if(GameManager.gm.gameIsOver)
-                        return;
-                }
-        */
+        StartCoroutine(Utils.CreateLoopCoroutine(MakeCrate, spawningCrateDelay));
     }
 
     //Spawn Arma
     void MakeWeapon(){
         Vector3 spawnPosition;
 
-        if (weaponNumber <= maxWpnNumber){
-            
+        if (weaponNumber <= maxWpnNumber)
+        {
             //random coordinate in a rectangle
             spawnPosition.x = UnityEngine.Random.Range(xMinRange, xMaxRange);
-            spawnPosition.y = 1;
+            spawnPosition.y = 5;
             spawnPosition.z = UnityEngine.Random.Range(zMinRange, zMaxRange);
 
-            Debug.Log(spawnPosition);
             //determine which object
-            if(spawnObjects.Length > 0){
-                int objectToSpawn = UnityEngine.Random.Range(0, spawnObjects.Length);
-                Instantiate(spawnObjects[objectToSpawn], spawnPosition, new Quaternion());
+            if(spawnableObjects.Length > 0)
+            {
+                Instantiate(getRandomItem(), spawnPosition, new Quaternion());
             }
-
-            //My NUMBER IS!!!
-            weaponNumber++;
         }
     }
 
 
     void MakeCrate()
     {
-        // Inicializar variaveis
         Vector3 spawnPosition;
-        float zMinRange = -20;
-        float zMaxRange = 20;
-        float xMinRange = -20;
-        float xMaxRange = 20;
 
+        if (weaponNumber <= maxWpnNumber)
+        {
+            //random coordinate in a rectangle
+            spawnPosition.x = UnityEngine.Random.Range(xMinRange, xMaxRange);
+            spawnPosition.y = 5;
+            spawnPosition.z = UnityEngine.Random.Range(zMinRange, zMaxRange);
 
-        //random coordinate in a rectangle
-        spawnPosition.x = UnityEngine.Random.Range(xMinRange, xMaxRange);
-        spawnPosition.y = 50;
-        spawnPosition.z = UnityEngine.Random.Range(zMinRange, zMaxRange);
-
-        //Meter o prefab 
-        if (Crate != null){
-        GameObject newCrate = Instantiate(Crate, spawnPosition, transform.rotation) as GameObject;
-            newCrate.GetComponent<Crate>().Weapon = getRandomWeapon();
+            //Meter o prefab 
+            if (cratePrefab != null && spawnableObjects.Length > 0)
+            {
+                GameObject newCrate = Instantiate(cratePrefab, spawnPosition, new Quaternion()) as GameObject;
+                newCrate.GetComponent<Crate>().Item = getRandomItem();
+            }
         }
     }
 
-    public GameObject getRandomWeapon(){
-        int objectToSpawn = UnityEngine.Random.Range(0, spawnObjects.Length);
-        return spawnObjects[objectToSpawn];
+    public GameObject getRandomItem(){
+        int objectToSpawn = UnityEngine.Random.Range(0, spawnableObjects.Length);
+        return spawnableObjects[objectToSpawn];
     }
 
-    public void RemoveWeapon(){
+    public void IncrementItem(){
+        weaponNumber++;
+    }
+
+    public void DecrementItem()
+    {
         weaponNumber--;
     }
-    
+
 }

@@ -10,7 +10,7 @@ class Utils{
         while (true)
         {
             yield return new WaitForSeconds(deltaTime);
-            ExecuteAfterTime(method, deltaTime);
+            method.DynamicInvoke();
         }
     }
 
