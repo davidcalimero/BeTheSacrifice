@@ -140,7 +140,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeBar: {fileID: 2800000, guid: 2eee03805cafa7541ae6c12b8a2467ee, type: 3}
-  lifebarSize: 100
 --- !u!114 &11467404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -153,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 5
+  fallTime: 5
+  arm: {fileID: 194592}
 --- !u!114 &11478202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -270,7 +271,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: arm
+      value: 
+      objectReference: {fileID: 194592}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185194}

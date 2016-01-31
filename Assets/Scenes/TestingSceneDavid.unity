@@ -209,8 +209,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6469578, guid: d17393a6570df5b438fc68ae783315e4, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d17393a6570df5b438fc68ae783315e4, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1779368427
@@ -271,7 +270,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -293,8 +292,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779368427}
-  m_LocalRotation: {x: 0.30901706, y: 0, z: 0, w: 0.95105654}
-  m_LocalPosition: {x: 2.2, y: 4, z: -5}
+  m_LocalRotation: {x: 0.35836798, y: 0, z: 0, w: 0.9335804}
+  m_LocalPosition: {x: 0, y: 4, z: -5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

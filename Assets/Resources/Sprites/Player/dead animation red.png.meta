@@ -1,0 +1,961 @@
+fileFormatVersion: 2
+guid: e365dfbaba0318c47af31e8662cd7a02
+timeCreated: 1454237324
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dead animation red_0
+    21300002: dead animation red_1
+    21300004: dead animation red_2
+    21300006: dead animation red_3
+    21300008: dead animation red_4
+    21300010: dead animation red_5
+    21300012: dead animation red_6
+    21300014: dead animation red_7
+    21300016: dead animation red_8
+    21300018: dead animation red_9
+    21300020: dead animation red_10
+    21300022: dead animation red_11
+    21300024: dead animation red_12
+    21300026: dead animation red_13
+    21300028: dead animation red_14
+    21300030: dead animation red_15
+    21300032: dead animation red_16
+    21300034: dead animation red_17
+    21300036: dead animation red_18
+    21300038: dead animation red_19
+    21300040: dead animation red_20
+    21300042: dead animation red_21
+    21300044: dead animation red_22
+    21300046: dead animation red_23
+    21300048: dead animation red_24
+    21300050: dead animation red_25
+    21300052: dead animation red_26
+    21300054: dead animation red_27
+    21300056: dead animation red_28
+    21300058: dead animation red_29
+    21300060: dead animation red_30
+    21300062: dead animation red_31
+    21300064: dead animation red_32
+    21300066: dead animation red_33
+    21300068: dead animation red_34
+    21300070: dead animation red_35
+    21300072: dead animation red_36
+    21300074: dead animation red_37
+    21300076: dead animation red_38
+    21300078: dead animation red_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 275
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dead animation red_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34, y: 69.5}
+        - {x: 34, y: -25.5}
+        - {x: 35, y: -26.5}
+        - {x: 60, y: -26.5}
+        - {x: 69, y: -3.5}
+        - {x: 69, y: 69.5}
+    - name: dead animation red_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: 46.5}
+        - {x: -65.5, y: 47.5}
+        - {x: -65.5, y: 50.5}
+        - {x: -67.5, y: 52.5}
+        - {x: -68.5, y: 52.5}
+    - name: dead animation red_2
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 66.5}
+        - {x: -34, y: -29.5}
+        - {x: -32, y: -30.5}
+        - {x: -10, y: -30.5}
+        - {x: 2, y: 17.5}
+        - {x: 2, y: 52.5}
+        - {x: -6, y: 66.5}
+    - name: dead animation red_3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61.5, y: 41.5}
+        - {x: 41.5, y: 41.5}
+        - {x: 35.5, y: 37.5}
+        - {x: 35.5, y: -49.5}
+        - {x: 36.5, y: -54.5}
+        - {x: 38.5, y: -55.5}
+        - {x: 56.5, y: -55.5}
+        - {x: 62.5, y: -40.5}
+        - {x: 69.5, y: 1.5}
+        - {x: 69.5, y: 38.5}
+    - name: dead animation red_4
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66, y: 18.5}
+        - {x: -66, y: 21.5}
+        - {x: -69, y: 22.5}
+        - {x: -69, y: 17.5}
+    - name: dead animation red_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 17.5}
+        - {x: -32.5, y: 15.5}
+        - {x: -32.5, y: -62.5}
+        - {x: -30.5, y: -68.5}
+        - {x: -2.5, y: -68.5}
+        - {x: 3.5, y: -21.5}
+        - {x: 3.5, y: 17.5}
+    - name: dead animation red_6
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: -12.5}
+        - {x: 63, y: -3.5}
+        - {x: 44, y: -3.5}
+        - {x: 35, y: -6.5}
+        - {x: 35, y: -62.5}
+        - {x: 36, y: -68.5}
+        - {x: 57, y: -68.5}
+        - {x: 59, y: -65.5}
+        - {x: 69, y: -35.5}
+    - name: dead animation red_7
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: -29.5}
+        - {x: -65.5, y: -28.5}
+        - {x: -64.5, y: -24.5}
+        - {x: -67.5, y: -20.5}
+        - {x: -68.5, y: -20.5}
+    - name: dead animation red_8
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: -26.5}
+        - {x: -32, y: -30.5}
+        - {x: -33, y: -31.5}
+        - {x: -33, y: -57.5}
+        - {x: -31, y: -68.5}
+        - {x: -7, y: -68.5}
+        - {x: 3, y: -64.5}
+        - {x: 3, y: -27.5}
+        - {x: 0, y: -26.5}
+    - name: dead animation red_9
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.5, y: -45.5}
+        - {x: 36.5, y: -47.5}
+        - {x: 36.5, y: -68.5}
+        - {x: 69.5, y: -68.5}
+        - {x: 69.5, y: -51.5}
+        - {x: 68.5, y: -45.5}
+    - name: dead animation red_10
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -69, y: -68.5}
+        - {x: -65, y: -68.5}
+        - {x: -65, y: -66.5}
+        - {x: -68, y: -62.5}
+        - {x: -69, y: -62.5}
+    - name: dead animation red_11
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -62.5}
+        - {x: -24.5, y: -67.5}
+        - {x: -24.5, y: -68.5}
+        - {x: -2.5, y: -68.5}
+        - {x: -2.5, y: -65.5}
+        - {x: -9.5, y: -62.5}
+    - name: dead animation red_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: -31}
+        - {x: -54, y: -31}
+        - {x: -69, y: -38}
+        - {x: -69, y: -57}
+        - {x: -67, y: -68}
+        - {x: 39, y: -68}
+        - {x: 43, y: -64}
+        - {x: 43, y: -38}
+    - name: dead animation red_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: -31}
+        - {x: 13.5, y: -31}
+        - {x: 3.5, y: -33}
+        - {x: 1.5, y: -41}
+        - {x: 1.5, y: -64}
+        - {x: 3.5, y: -68}
+        - {x: 64.5, y: -68}
+        - {x: 69.5, y: -65}
+        - {x: 69.5, y: -44}
+        - {x: 66.5, y: -43}
+    - name: dead animation red_14
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -43, y: -36}
+        - {x: -69, y: -44}
+        - {x: -69, y: -64}
+        - {x: -45, y: -65}
+        - {x: -30, y: -65}
+        - {x: -26, y: -60}
+        - {x: -26, y: -38}
+    - name: dead animation red_15
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.5, y: -31}
+        - {x: -52.5, y: -31}
+        - {x: -67.5, y: -38}
+        - {x: -67.5, y: -57}
+        - {x: -65.5, y: -68}
+        - {x: 40.5, y: -68}
+        - {x: 44.5, y: -64}
+        - {x: 44.5, y: -38}
+    - name: dead animation red_16
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: -31}
+        - {x: 13, y: -31}
+        - {x: 3, y: -33}
+        - {x: 1, y: -41}
+        - {x: 1, y: -64}
+        - {x: 3, y: -68}
+        - {x: 64, y: -68}
+        - {x: 69, y: -65}
+        - {x: 69, y: -44}
+        - {x: 66, y: -43}
+    - name: dead animation red_17
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -36}
+        - {x: -41.5, y: -36}
+        - {x: -68.5, y: -44}
+        - {x: -68.5, y: -64}
+        - {x: -43.5, y: -65}
+        - {x: -28.5, y: -65}
+        - {x: -24.5, y: -60}
+        - {x: -24.5, y: -38}
+      - - {x: -28.5, y: 69}
+        - {x: -30.5, y: 59}
+        - {x: -27.5, y: 56}
+        - {x: -15.5, y: 56}
+        - {x: -9.5, y: 63}
+        - {x: -9.5, y: 69}
+    - name: dead animation red_18
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42, y: -31}
+        - {x: -53, y: -31}
+        - {x: -68, y: -38}
+        - {x: -68, y: -57}
+        - {x: -66, y: -68}
+        - {x: 40, y: -68}
+        - {x: 44, y: -64}
+        - {x: 44, y: -38}
+      - - {x: 36, y: 69}
+        - {x: 36, y: 37}
+        - {x: 38, y: 36}
+        - {x: 56, y: 36}
+        - {x: 59, y: 44}
+        - {x: 59, y: 61}
+        - {x: 57, y: 69}
+    - name: dead animation red_19
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: -31}
+        - {x: 2.5, y: -65}
+        - {x: 3.5, y: -68}
+        - {x: 69.5, y: -68}
+        - {x: 69.5, y: -34}
+        - {x: 33.5, y: -31}
+    - name: dead animation red_20
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: -36}
+        - {x: -42, y: -36}
+        - {x: -69, y: -44}
+        - {x: -69, y: -64}
+        - {x: -44, y: -65}
+        - {x: -29, y: -65}
+        - {x: -25, y: -60}
+        - {x: -25, y: -38}
+      - - {x: -29, y: 69}
+        - {x: -33, y: 63}
+        - {x: -33, y: 37}
+        - {x: -31, y: 13}
+        - {x: -15, y: 13}
+        - {x: -10, y: 14}
+        - {x: -10, y: 57}
+        - {x: -12, y: 69}
+    - name: dead animation red_21
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.5, y: -38}
+        - {x: 43.5, y: -31}
+        - {x: -48.5, y: -31}
+        - {x: -66.5, y: -37}
+        - {x: -66.5, y: -68}
+        - {x: 35.5, y: -68}
+        - {x: 45.5, y: -62}
+      - - {x: 36.5, y: 69}
+        - {x: 36.5, y: 4}
+        - {x: 38.5, y: -7}
+        - {x: 56.5, y: -7}
+        - {x: 66.5, y: -3}
+        - {x: 69.5, y: 33}
+        - {x: 69.5, y: 69}
+    - name: dead animation red_22
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -31}
+        - {x: 2, y: -65}
+        - {x: 3, y: -68}
+        - {x: 69, y: -68}
+        - {x: 69, y: -34}
+        - {x: 33, y: -31}
+      - - {x: -69, y: 69}
+        - {x: -69, y: 65}
+        - {x: -68, y: 65}
+        - {x: -65, y: 68}
+        - {x: -65, y: 69}
+    - name: dead animation red_23
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: -36}
+        - {x: -41.5, y: -36}
+        - {x: -68.5, y: -44}
+        - {x: -68.5, y: -64}
+        - {x: -51.5, y: -65}
+        - {x: -27.5, y: -65}
+        - {x: -23.5, y: -60}
+        - {x: -23.5, y: -38}
+      - - {x: -27.5, y: 69}
+        - {x: -31.5, y: 65}
+        - {x: -31.5, y: -23}
+        - {x: -30.5, y: -24}
+        - {x: -7.5, y: -24}
+        - {x: 4.5, y: 16}
+        - {x: 4.5, y: 65}
+        - {x: 2.5, y: 69}
+    - name: dead animation red_24
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: -38}
+        - {x: 43, y: -31}
+        - {x: -49, y: -31}
+        - {x: -67, y: -37}
+        - {x: -67, y: -68}
+        - {x: 35, y: -68}
+        - {x: 45, y: -62}
+      - - {x: 65, y: 62}
+        - {x: 43, y: 62}
+        - {x: 36, y: 55}
+        - {x: 36, y: -28}
+        - {x: 37, y: -35}
+        - {x: 57, y: -35}
+        - {x: 65, y: -19}
+        - {x: 69, y: 24}
+        - {x: 69, y: 61}
+    - name: dead animation red_25
+      rect:
+        serializedVersion: 2
+        x: 3575
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: 47}
+        - {x: -68.5, y: 35}
+        - {x: -67.5, y: 35}
+        - {x: -64.5, y: 37}
+        - {x: -63.5, y: 41}
+        - {x: -67.5, y: 47}
+    - name: dead animation red_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 42}
+        - {x: -69, y: -43}
+        - {x: -69, y: -63}
+        - {x: -68, y: -69}
+        - {x: 47, y: -69}
+        - {x: 48, y: -67}
+        - {x: 48, y: 42}
+    - name: dead animation red_27
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: -40}
+        - {x: 1.5, y: -47}
+        - {x: 1.5, y: -68}
+        - {x: 2.5, y: -69}
+        - {x: 69.5, y: -69}
+        - {x: 69.5, y: -51}
+        - {x: 40.5, y: -40}
+      - - {x: 66.5, y: -13}
+        - {x: 68.5, y: -14}
+        - {x: 69.5, y: -14}
+        - {x: 69.5, y: -3}
+        - {x: 66.5, y: -4}
+      - - {x: 57.5, y: 43}
+        - {x: 51.5, y: 36}
+        - {x: 51.5, y: 10}
+        - {x: 58.5, y: 2}
+        - {x: 69.5, y: 2}
+        - {x: 69.5, y: 43}
+    - name: dead animation red_28
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -69, y: -69}
+        - {x: -26, y: -69}
+        - {x: -26, y: -45}
+        - {x: -41, y: -45}
+        - {x: -69, y: -51}
+      - - {x: -61, y: 43}
+        - {x: -69, y: 43}
+        - {x: -69, y: -19}
+        - {x: -55, y: -51}
+        - {x: -40, y: -51}
+        - {x: -30, y: -35}
+        - {x: -30, y: -23}
+        - {x: -47, y: 30}
+    - name: dead animation red_29
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.5, y: -40}
+        - {x: -67.5, y: -43}
+        - {x: -67.5, y: -63}
+        - {x: -66.5, y: -69}
+        - {x: 44.5, y: -69}
+        - {x: 44.5, y: -40}
+      - - {x: -9.5, y: 27}
+        - {x: -21.5, y: 30}
+        - {x: -37.5, y: 30}
+        - {x: -44.5, y: 28}
+        - {x: -44.5, y: -3}
+        - {x: -43.5, y: -8}
+        - {x: 15.5, y: -52}
+        - {x: 19.5, y: -52}
+        - {x: 32.5, y: -46}
+        - {x: 32.5, y: -24}
+        - {x: 25.5, y: -19}
+    - name: dead animation red_30
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: -40}
+        - {x: 1, y: -47}
+        - {x: 1, y: -68}
+        - {x: 2, y: -69}
+        - {x: 69, y: -69}
+        - {x: 69, y: -51}
+        - {x: 40, y: -40}
+      - - {x: 35, y: 16}
+        - {x: 19, y: 16}
+        - {x: 11, y: 10}
+        - {x: 11, y: -9}
+        - {x: 22, y: -31}
+        - {x: 64, y: -47}
+        - {x: 69, y: -47}
+        - {x: 69, y: -17}
+        - {x: 44, y: 14}
+    - name: dead animation red_31
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66.5, y: -16}
+        - {x: -68.5, y: -17}
+        - {x: -68.5, y: -69}
+        - {x: -24.5, y: -69}
+        - {x: -24.5, y: -30}
+        - {x: -32.5, y: -16}
+    - name: dead animation red_32
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 948
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: -12}
+        - {x: -68, y: -12}
+        - {x: -68, y: -69}
+        - {x: 44, y: -69}
+        - {x: 44, y: -48}
+        - {x: 43, y: -38}
+    - name: dead animation red_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 69.5}
+        - {x: -64, y: 67.5}
+        - {x: -56, y: 61.5}
+        - {x: -38, y: 61.5}
+        - {x: -31, y: 67.5}
+        - {x: -31, y: 69.5}
+      - - {x: -27, y: 69.5}
+        - {x: -27, y: 66.5}
+        - {x: -24, y: 63.5}
+        - {x: 4, y: 63.5}
+        - {x: 13, y: 65.5}
+        - {x: 13, y: 69.5}
+      - - {x: 23, y: 69.5}
+        - {x: 23, y: 66.5}
+        - {x: 28, y: 64.5}
+        - {x: 38, y: 64.5}
+        - {x: 42, y: 66.5}
+        - {x: 42, y: 69.5}
+    - name: dead animation red_34
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 69.5}
+        - {x: 6.5, y: 67.5}
+        - {x: 14.5, y: 62.5}
+        - {x: 16.5, y: 61.5}
+        - {x: 30.5, y: 61.5}
+        - {x: 39.5, y: 65.5}
+        - {x: 39.5, y: 69.5}
+      - - {x: 42.5, y: 69.5}
+        - {x: 42.5, y: 68.5}
+        - {x: 44.5, y: 65.5}
+        - {x: 47.5, y: 63.5}
+        - {x: 62.5, y: 63.5}
+        - {x: 69.5, y: 64.5}
+        - {x: 69.5, y: 69.5}
+    - name: dead animation red_35
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40, y: 64.5}
+        - {x: -30, y: 64.5}
+        - {x: -27, y: 66.5}
+        - {x: -27, y: 69.5}
+        - {x: -45, y: 69.5}
+        - {x: -44, y: 66.5}
+      - - {x: -69, y: 69.5}
+        - {x: -69, y: 65.5}
+        - {x: -57, y: 66.5}
+        - {x: -55, y: 68.5}
+        - {x: -55, y: 69.5}
+    - name: dead animation red_36
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -62.5, y: 69.5}
+        - {x: -62.5, y: 67.5}
+        - {x: -54.5, y: 61.5}
+        - {x: -36.5, y: 61.5}
+        - {x: -29.5, y: 67.5}
+        - {x: -29.5, y: 69.5}
+      - - {x: -25.5, y: 69.5}
+        - {x: -25.5, y: 66.5}
+        - {x: -22.5, y: 63.5}
+        - {x: 5.5, y: 63.5}
+        - {x: 14.5, y: 65.5}
+        - {x: 14.5, y: 69.5}
+      - - {x: 24.5, y: 69.5}
+        - {x: 24.5, y: 66.5}
+        - {x: 29.5, y: 64.5}
+        - {x: 39.5, y: 64.5}
+        - {x: 43.5, y: 66.5}
+        - {x: 43.5, y: 69.5}
+    - name: dead animation red_37
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 69.5}
+        - {x: 6, y: 67.5}
+        - {x: 14, y: 62.5}
+        - {x: 16, y: 61.5}
+        - {x: 30, y: 61.5}
+        - {x: 39, y: 65.5}
+        - {x: 39, y: 69.5}
+      - - {x: 42, y: 69.5}
+        - {x: 42, y: 68.5}
+        - {x: 44, y: 65.5}
+        - {x: 47, y: 63.5}
+        - {x: 62, y: 63.5}
+        - {x: 69, y: 64.5}
+        - {x: 69, y: 69.5}
+    - name: dead animation red_38
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.5, y: 64.5}
+        - {x: -28.5, y: 64.5}
+        - {x: -25.5, y: 66.5}
+        - {x: -25.5, y: 69.5}
+        - {x: -43.5, y: 69.5}
+        - {x: -42.5, y: 66.5}
+      - - {x: -68.5, y: 69.5}
+        - {x: -68.5, y: 65.5}
+        - {x: -54.5, y: 65.5}
+        - {x: -53.5, y: 68.5}
+        - {x: -53.5, y: 69.5}
+    - name: dead animation red_39
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 673
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63, y: 69.5}
+        - {x: -63, y: 67.5}
+        - {x: -55, y: 61.5}
+        - {x: -37, y: 61.5}
+        - {x: -30, y: 67.5}
+        - {x: -30, y: 69.5}
+      - - {x: -26, y: 69.5}
+        - {x: -26, y: 66.5}
+        - {x: -23, y: 63.5}
+        - {x: 5, y: 63.5}
+        - {x: 14, y: 65.5}
+        - {x: 14, y: 69.5}
+      - - {x: 24, y: 69.5}
+        - {x: 24, y: 66.5}
+        - {x: 29, y: 64.5}
+        - {x: 39, y: 64.5}
+        - {x: 43, y: 66.5}
+        - {x: 43, y: 69.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

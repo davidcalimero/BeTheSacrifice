@@ -50,6 +50,8 @@ class Player : MonoBehaviour, IPlayer
 
     void Update()
     {
+        if (actuator.IsOnFallState)
+           return;
 
         direction = new Vector3(Input.GetAxis("Horizontal" + Id), 0, Input.GetAxis("Vertical" + Id));
         actuator.Move(direction);
@@ -65,6 +67,7 @@ class Player : MonoBehaviour, IPlayer
 
         if (Input.GetButtonDown("Push" + Id) && NearEnimy != null)
         {
+            Animator enemyAnimator = NearEnimy.GetComponent<Animator>();
             Vector3 directionToPush = (NearEnimy.transform.position - gameObject.transform.position).normalized;
             NearEnimy.GetComponent<Actuator>().Push(directionToPush * pushForce);
         }
@@ -72,6 +75,11 @@ class Player : MonoBehaviour, IPlayer
 
     public void ChangeLife(float ammount)
     {
+        if(ammount < 0)
+        {
+            ArmAnimator.SetTrigger("damage");
+        }
+
         lifeAmmount += ammount;
     }
 
