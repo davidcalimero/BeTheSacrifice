@@ -12,19 +12,16 @@ public class SpawnableGameObjects : MonoBehaviour{
 
     private int weaponNumber = 0;
 
-    /*
+    
     float zMinRange = -3.5f;
     float zMaxRange = 5;
     float xMinRange = -1;
     float xMaxRange = 6;
-    */
+    
 
     //publico a verificar
 
-    float zMinRange = 5f;
-    float zMaxRange = 8f;
-    float xMinRange = -3;
-    float xMaxRange = 9;
+   
     
 
 
@@ -60,6 +57,11 @@ public class SpawnableGameObjects : MonoBehaviour{
     void MakeWeapon(){
         Vector3 spawnPosition;
 
+        float zMinRange = -3.5f;
+        float zMaxRange = 5;
+        float xMinRange = -1;
+        float xMaxRange = 6;
+
         if (weaponNumber <= maxWpnNumber)
         {
             //random coordinate in a rectangle
@@ -80,6 +82,12 @@ public class SpawnableGameObjects : MonoBehaviour{
 
     void MakeCrate()
     {
+
+        float zMinRange = 5f;
+        float zMaxRange = 8f;
+        float xMinRange = -3;
+        float xMaxRange = 9;
+
         Vector3 spawnPosition;
 
         if (weaponNumber <= maxWpnNumber)
