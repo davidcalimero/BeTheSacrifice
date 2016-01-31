@@ -30,7 +30,7 @@ class Rock : MonoBehaviour, IItem
         Vector3 position = player.Position + player.Direction * 0.4f;
         GameObject instance = Instantiate(Resources.Load(prefabPath), position, new Quaternion()) as GameObject;
         instance.GetComponent<Rigidbody>().velocity = player.Direction * velocity;
-        instance.GetComponent<Banana>().Used = true;
+        instance.GetComponent<Rock>().Used = true;
     }
 
     void OnCollisionEnter(Collision collision)
