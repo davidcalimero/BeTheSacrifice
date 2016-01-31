@@ -58,9 +58,9 @@ public class SpawnableGameObjects : MonoBehaviour{
         Vector3 spawnPosition;
 
         float zMinRange = -3.5f;
-        float zMaxRange = 5;
-        float xMinRange = -1;
-        float xMaxRange = 6;
+        float zMaxRange = 4.5f;
+        float xMinRange = -1.0f;
+        float xMaxRange = 6.0f;
 
         if (weaponNumber <= maxWpnNumber)
         {
