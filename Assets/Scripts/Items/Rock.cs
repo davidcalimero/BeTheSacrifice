@@ -41,6 +41,8 @@ class Rock : MonoBehaviour, IItem
             if (Used)
             {
                 player.ChangeLife(-damage);
+                this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.RockHit, 1f);
+
             }
 
             if (Used || player.PickUp(this))

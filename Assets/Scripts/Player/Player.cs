@@ -67,6 +67,8 @@ class Player : MonoBehaviour, IPlayer
         {
             Vector3 directionToPush = (NearEnimy.transform.position - gameObject.transform.position).normalized;
             NearEnimy.GetComponent<Actuator>().Push(directionToPush * pushForce);
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.Empurrar, 1f);
+
         }
     }
 
@@ -90,6 +92,11 @@ class Player : MonoBehaviour, IPlayer
         {
             this.gameObject.GetComponentInChildren<Animator>().SetTrigger("activated");
         }
+
+        if (ammount < 0)
+        {
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.CharacterDamageVoice, 1f);
+        }
     }
 
     private void UseItem(uint itemSlot)
@@ -103,6 +110,7 @@ class Player : MonoBehaviour, IPlayer
 
     public bool PickUp(IItem item)
     {
+        this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.PickupItem, 1f);
         return inventory.addItem(item);
     }
 
