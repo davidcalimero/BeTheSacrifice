@@ -23,7 +23,7 @@ class Board : MonoBehaviour, IItem {
 	public void Use(IPlayer player)
 	{
 		player.ArmAnimator.SetTrigger ("board");
-		player.ChangeLife(lifeGainAmmount);
+		player.ChangeLife(-lifeGainAmmount);
 	}
 
 	void OnCollisionEnter(Collision collision)
