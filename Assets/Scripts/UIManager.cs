@@ -2,30 +2,31 @@
 using System.Collections;
 
 public class UIManager : MonoBehaviour {
-	//Player _player;
-
 	public Texture2D lifeBar;
-	public float lifebarSize;
-	private float barWidth = 30.0f;
+	private float lifebarSize;
+	private float maxlifebarSize;
+	private float barWidth = 20.0f;
+	private float yLifeBarOffset = 15f;
 
 	void Start(){
 		//_playerCharacter = this.gameObject.GetComponent <Player> ();
 
+		maxlifebarSize = Screen.width * 0.5f - 0.1f * Screen.width;
 	}
 
 	void OnGUI(){
 		if (this.gameObject.name.Equals ("Player1")) {
-			//_lifebarSize = _player.lifeAmmount;
+			lifebarSize = this.gameObject.GetComponent<Player>().LifeAmmount * maxlifebarSize * 0.01f;
 
 			//GUI.Label(new Rect (0, 50, 100, 30), _player.lifeAmmount.ToString());
-			GUI.DrawTexture(new Rect(Screen.width*0.5f - 15f, 50, -(lifebarSize), barWidth), lifeBar);
+			GUI.DrawTexture(new Rect(Screen.width*0.5f - 30f, Screen.height - barWidth - yLifeBarOffset, -lifebarSize, barWidth), lifeBar);
 
 		}
 		else if(this.gameObject.name.Equals("Player2")){
-			//_lifebar_size = playerManager.lifeAmmount;
+			lifebarSize = this.gameObject.GetComponent<Player>().LifeAmmount * maxlifebarSize * 0.01f;
 
 			//GUI.Label(new Rect (xOffset + 0, yOffset + 50, 100, 30), _player.lifeAmmount.ToString());
-			GUI.DrawTexture(new Rect(Screen.width*0.5f + 15, 50, lifebarSize, barWidth), lifeBar);
+			GUI.DrawTexture(new Rect(Screen.width*0.5f + 30, Screen.height - barWidth - yLifeBarOffset , lifebarSize, barWidth), lifeBar);
 		}
 	}
 }
