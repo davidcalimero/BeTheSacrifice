@@ -546,6 +546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb0df7e65b9e1741910079071f63819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SacrificeHopefullRed: {fileID: 2800000, guid: 71d269e2eb4c5ee43b75bb7e37635300,
+    type: 3}
+  SacrificeHopefullGreen: {fileID: 2800000, guid: a8b9622d353455043b1fb82ad6e314d9,
+    type: 3}
   lifeBar: {fileID: 2800000, guid: 2eee03805cafa7541ae6c12b8a2467ee, type: 3}
 --- !u!114 &11499878
 MonoBehaviour:

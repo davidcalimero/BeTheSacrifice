@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class UIManager : MonoBehaviour {
-	public Texture2D lifeBar;
+
+    public Texture2D SacrificeHopefullRed;
+    public Texture2D SacrificeHopefullGreen;
+
+    public Texture2D lifeBar;
 	private float lifebarSize;
 	private float maxlifebarSize;
 	private float barWidth = 20.0f;
@@ -18,15 +22,21 @@ public class UIManager : MonoBehaviour {
 		if (this.gameObject.name.Equals ("Player1")) {
 			lifebarSize = this.gameObject.GetComponent<Player>().LifeAmmount * maxlifebarSize * 0.01f;
 
-			//GUI.Label(new Rect (0, 50, 100, 30), _player.lifeAmmount.ToString());
-			GUI.DrawTexture(new Rect(Screen.width*0.5f - 30f, Screen.height - barWidth - yLifeBarOffset, -lifebarSize, barWidth), lifeBar);
+            //GUI.Label(new Rect (0, 50, 100, 30), _player.lifeAmmount.ToString());
+
+            GUI.DrawTexture(new Rect(Screen.width * 0.5f + 30f, Screen.height - barWidth - yLifeBarOffset- SacrificeHopefullRed.height, SacrificeHopefullRed.width, SacrificeHopefullRed.height), SacrificeHopefullRed);
+
+            GUI.DrawTexture(new Rect(Screen.width*0.5f - 30f, Screen.height - barWidth - yLifeBarOffset, -lifebarSize, barWidth), lifeBar);
 
 		}
 		else if(this.gameObject.name.Equals("Player2")){
 			lifebarSize = this.gameObject.GetComponent<Player>().LifeAmmount * maxlifebarSize * 0.01f;
 
-			//GUI.Label(new Rect (xOffset + 0, yOffset + 50, 100, 30), _player.lifeAmmount.ToString());
-			GUI.DrawTexture(new Rect(Screen.width*0.5f + 30, Screen.height - barWidth - yLifeBarOffset , lifebarSize, barWidth), lifeBar);
+            //GUI.Label(new Rect (xOffset + 0, yOffset + 50, 100, 30), _player.lifeAmmount.ToString());
+
+            GUI.DrawTexture(new Rect(Screen.width * 0.5f - 30f-SacrificeHopefullGreen.width, Screen.height - barWidth - yLifeBarOffset - SacrificeHopefullGreen.height, SacrificeHopefullGreen.width, SacrificeHopefullGreen.height), SacrificeHopefullGreen);
+
+            GUI.DrawTexture(new Rect(Screen.width*0.5f + 30, Screen.height - barWidth - yLifeBarOffset , lifebarSize, barWidth), lifeBar);
 		}
 	}
 }
