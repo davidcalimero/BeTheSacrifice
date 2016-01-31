@@ -71,7 +71,7 @@ public class SpawnableGameObjects : MonoBehaviour{
             spawnPosition.x = UnityEngine.Random.Range(xMinRange, xMaxRange);
             spawnPosition.y = 8;
             spawnPosition.z = UnityEngine.Random.Range(zMinRange, zMaxRange);
-            float power = UnityEngine.Random.Range(2f, 8f);
+            float power = UnityEngine.Random.Range(3f, 6.5f);
 
             //determine which object
             if (spawnableObjects != null && spawnableObjects.Length > 0)
