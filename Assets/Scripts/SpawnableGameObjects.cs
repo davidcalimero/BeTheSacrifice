@@ -90,7 +90,7 @@ public class SpawnableGameObjects : MonoBehaviour{
             spawnPosition.z = UnityEngine.Random.Range(zMinRange, zMaxRange);
 
             //Meter o prefab 
-            if (cratePrefab != null && spawnableObjects.Length > 0)
+            if (cratePrefab != null && Cratesitems.Length > 0)
             {
                 GameObject newCrate = Instantiate(cratePrefab, spawnPosition, new Quaternion()) as GameObject;
                 newCrate.GetComponent<Crate>().Item = getRandomItemCrate();
