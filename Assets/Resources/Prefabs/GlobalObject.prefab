@@ -23,8 +23,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.65, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,6 +47,11 @@ MonoBehaviour:
   - {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
   - {fileID: 188728, guid: 212b602e94dc4a84889b2f9052685e2d, type: 2}
   cratePrefab: {fileID: 188728, guid: b759782f41f67924489f551a0d12c523, type: 2}
+  Cratesitems:
+  - {fileID: 101900, guid: ac6fd02e805fc8b40a028b09eb84a208, type: 2}
+  - {fileID: 101900, guid: 3f2f49375a63d294aa42480ba033918e, type: 2}
+  - {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
+  - {fileID: 188728, guid: 212b602e94dc4a84889b2f9052685e2d, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
