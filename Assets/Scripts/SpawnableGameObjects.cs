@@ -1,22 +1,24 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-public class SpawnableGameObjects : MonoBehaviour
-{
+public class SpawnableGameObjects : MonoBehaviour{
+
     public static SpawnableGameObjects Instance;
 
-    //public variables
+    //Inicializar variaveis
     public float secondsBetweenSpawning = 3.0f;
+    public float secondsBetweenSpawningCrate = 5.0f;
+
     private int weaponNumber = 0;
-    float yMinRange = 1;
-    float yMaxRange = 1;
     float zMinRange = -20;
     float zMaxRange = 20;
     float xMinRange = -20;
     float xMaxRange = 20;
     public int maxWpnNumber = 15;
 
-    //area circular variaveis
-    public GameObject[] spawnObjects; // what prefabs spawn
+    //prefab
+    public GameObject[] spawnObjects;
+    public GameObject Crate;
 
     private float nextSpawnTime;
     private Vector3 newposition;
@@ -31,6 +33,9 @@ public class SpawnableGameObjects : MonoBehaviour
     {
         //determinar o spawn do proximo objecto
         StartCoroutine(Utils.CreateLoopCoroutine(MakeWeapon, secondsBetweenSpawning));
+        
+        //determinar o spawn da proxima Crate
+        StartCoroutine(Utils.CreateLoopCoroutine(MakeCrate, secondsBetweenSpawningCrate));
     }
 
     //update entre frames
@@ -45,22 +50,21 @@ public class SpawnableGameObjects : MonoBehaviour
         */
     }
 
-    void MakeWeapon()
-    {
+    //Spawn Arma
+    void MakeWeapon(){
         Vector3 spawnPosition;
 
-        if (weaponNumber <= maxWpnNumber)
-        {
-            //random coordinate in a circular area
-           
-            spawnPosition.x = Random.Range(xMinRange, xMaxRange);
+        if (weaponNumber <= maxWpnNumber){
+            
+            //random coordinate in a rectangle
+            spawnPosition.x = UnityEngine.Random.Range(xMinRange, xMaxRange);
             spawnPosition.y = 1;
-            spawnPosition.z = Random.Range(zMinRange, zMaxRange);
+            spawnPosition.z = UnityEngine.Random.Range(zMinRange, zMaxRange);
 
             Debug.Log(spawnPosition);
             //determine which object
             if(spawnObjects.Length > 0){
-                int objectToSpawn = Random.Range(0, spawnObjects.Length);
+                int objectToSpawn = UnityEngine.Random.Range(0, spawnObjects.Length);
                 Instantiate(spawnObjects[objectToSpawn], spawnPosition, new Quaternion());
             }
 
@@ -69,8 +73,36 @@ public class SpawnableGameObjects : MonoBehaviour
         }
     }
 
-    public void RemoveWeapon()
+
+    void MakeCrate()
     {
+        // Inicializar variaveis
+        Vector3 spawnPosition;
+        float zMinRange = -20;
+        float zMaxRange = 20;
+        float xMinRange = -20;
+        float xMaxRange = 20;
+
+
+        //random coordinate in a rectangle
+        spawnPosition.x = UnityEngine.Random.Range(xMinRange, xMaxRange);
+        spawnPosition.y = 50;
+        spawnPosition.z = UnityEngine.Random.Range(zMinRange, zMaxRange);
+
+        //Meter o prefab 
+        if (Crate != null){
+        GameObject newCrate = Instantiate(Crate, spawnPosition, transform.rotation) as GameObject;
+            newCrate.GetComponent<Crate>().Weapon = getRandomWeapon();
+        }
+    }
+
+    public GameObject getRandomWeapon(){
+        int objectToSpawn = UnityEngine.Random.Range(0, spawnObjects.Length);
+        return spawnObjects[objectToSpawn];
+    }
+
+    public void RemoveWeapon(){
         weaponNumber--;
     }
+    
 }
