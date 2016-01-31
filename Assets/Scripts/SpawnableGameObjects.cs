@@ -4,6 +4,7 @@ using UnityEngine;
 public class SpawnableGameObjects : MonoBehaviour{
 
     public static SpawnableGameObjects Instance;
+    
 
     //Inicializar variaveis
     public float spawningItemDelay = 3.0f;
@@ -11,7 +12,7 @@ public class SpawnableGameObjects : MonoBehaviour{
     
 
     private int weaponNumber = 0;
-
+    
     
     float zMinRange = -3.5f;
     float zMaxRange = 5;
@@ -30,8 +31,10 @@ public class SpawnableGameObjects : MonoBehaviour{
 
     //prefab
     public GameObject[] spawnableObjects;
+    public float[] spawnChance;
     public GameObject cratePrefab;
     public GameObject[] Cratesitems;
+    public float[] spawnChanceCrate;
 
     private float nextSpawnTime;
     private Vector3 newposition;
@@ -107,14 +110,28 @@ public class SpawnableGameObjects : MonoBehaviour{
     }
 
     public GameObject getRandomItem(){
-        int objectToSpawn = UnityEngine.Random.Range(0, spawnableObjects.Length);
-        return spawnableObjects[objectToSpawn];
+        float num = UnityEngine.Random.value * 100;
+        float v = 0;
+        for (int i = 0; i < spawnableObjects.Length; i++)
+        {
+            if (spawnChance[i] + v > num)
+                return spawnableObjects[i];
+            v += spawnChance[i];
+        }
+        return null;
     }
+
 
     public GameObject getRandomItemCrate()
     {
-        int objectToSpawn = UnityEngine.Random.Range(0, Cratesitems.Length);
-        return Cratesitems[objectToSpawn];
+        float num = UnityEngine.Random.value * 100;
+        float v = 0;
+        for (int i = 0; i < Cratesitems.Length; i++){
+            if (spawnChanceCrate[i] + v > num)
+                return Cratesitems[i];
+            v += spawnChanceCrate[i];
+        }
+        return null;
     }
 
     public void IncrementItem(){
@@ -125,5 +142,4 @@ public class SpawnableGameObjects : MonoBehaviour{
     {
         weaponNumber--;
     }
-
 }
