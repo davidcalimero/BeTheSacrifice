@@ -36,10 +36,8 @@ class PrayerItem : MonoBehaviour, IItem {
 
 	void OnCollisionEnter(Collision collision)
 	{
-		Debug.Log ("here2");
 		if (collision.collider.gameObject.tag == "Player")
 		{
-			Debug.Log ("here");
 			IPlayer player = collision.collider.gameObject.GetComponent<IPlayer>();
 
 			if (player.PickUp(this))

@@ -28,9 +28,7 @@ class Board : MonoBehaviour, IItem {
 
 	void OnCollisionEnter(Collision collision)
 	{
-		Debug.Log ("Her2e");
 		if (collision.collider.gameObject.tag == "Player") {
-			Debug.Log ("Here");
 			IPlayer player = collision.collider.gameObject.GetComponent<IPlayer> ();
 
 			if (player.PickUp (this)) {
