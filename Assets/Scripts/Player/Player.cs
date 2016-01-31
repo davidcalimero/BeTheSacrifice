@@ -10,6 +10,8 @@ class Player : MonoBehaviour, IPlayer
     public int Id = 1;
     public GameObject arm;
 
+	public GameObject particleHeal;
+
     private bool canPush = false;
     private Actuator actuator;
     private Inventory inventory;
@@ -64,14 +66,6 @@ class Player : MonoBehaviour, IPlayer
         {
             UseItem(1);
         }
-        else if (Input.GetButtonDown("Fire3" + Id))
-        {
-            UseItem(2);
-        }
-        else if (Input.GetButtonDown("Fire4" + Id))
-        {
-            UseItem(3);
-        }
 
         if (Input.GetButtonDown("Push" + Id) && NearEnimy != null)
         {
@@ -105,8 +99,8 @@ class Player : MonoBehaviour, IPlayer
 
         if(ammount > 0)
         {
-            this.gameObject.GetComponentInChildren<Animator>().SetTrigger("activated");
-            this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.GetHealth, 1f);
+			particleHeal.GetComponent<Animator> ().SetTrigger ("activated");
+			this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.GetHealth, 1f);
 
         }
 

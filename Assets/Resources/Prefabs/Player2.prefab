@@ -534,6 +534,7 @@ MonoBehaviour:
   pushForce: 100
   Id: 2
   arm: {fileID: 178716}
+  particleHeal: {fileID: 106310}
 --- !u!114 &11456890
 MonoBehaviour:
   m_ObjectHideFlags: 1
