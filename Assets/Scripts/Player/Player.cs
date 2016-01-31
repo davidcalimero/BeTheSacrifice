@@ -11,6 +11,7 @@ class Player : MonoBehaviour, IPlayer
     public GameObject arm;
 
 	public GameObject particleHeal;
+    public ParticleSystem Blood;
 
     private bool canPush = false;
     private Actuator actuator;
@@ -92,6 +93,7 @@ class Player : MonoBehaviour, IPlayer
         if (ammount < 0)
         {
             ArmAnimator.SetTrigger("damage");
+            Blood.Play();
         }
         else if (lifeAmmount == 0 && ammount > 0)
         {
