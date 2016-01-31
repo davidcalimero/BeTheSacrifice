@@ -3,7 +3,7 @@ using System.Collections;
 
 class Board : MonoBehaviour, IItem {
 
-	private static float lifeGainAmmount = 30f;
+	public static float lifeGainAmmount = 30f;
 
 	private Texture2D texture;
 

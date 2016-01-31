@@ -107,6 +107,7 @@ class Player : MonoBehaviour, IPlayer
         if (lifeAmmount == 0)
         {
             GameManager.Instance.PlayerDeath();
+            Push(Vector3.zero);
         }
 
         if(ammount > 0)
@@ -118,7 +119,7 @@ class Player : MonoBehaviour, IPlayer
 
         if (ammount < 0)
         {
-            this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.CharacterDamageVoice, 1f);
+           // this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.CharacterDamageVoice, 1f);
         }
     }
 

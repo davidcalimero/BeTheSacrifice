@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
+
+    public GameObject player1;
+    public GameObject player2;
 
     private GameObject LightObject;
 
@@ -57,6 +61,7 @@ public class GameManager : MonoBehaviour {
             slowTime = true;
             Time.timeScale = 0.1f;
             LightObject.GetComponent<Light>().intensity = .1f;
+            Invoke("checkHealh", 2);
         }
     }
 
@@ -70,4 +75,10 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    private void checkHealh()
+    {
+        Debug.Log("here");
+        if (player1.GetComponent<Player>().LifeAmmount == 0 || player1.GetComponent<Player>().LifeAmmount == 0)
+            SceneManager.LoadScene(0);
+    }
 }

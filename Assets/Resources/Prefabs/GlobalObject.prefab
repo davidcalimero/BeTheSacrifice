@@ -40,6 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07975f01f7f062e47b860bfb3828e4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!114 &11483204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62,11 +64,15 @@ MonoBehaviour:
   - {fileID: 101900, guid: 3f2f49375a63d294aa42480ba033918e, type: 2}
   - {fileID: 101900, guid: d08fca396b263274aa0e828de7d3a228, type: 2}
   - {fileID: 188728, guid: 212b602e94dc4a84889b2f9052685e2d, type: 2}
+  - {fileID: 113006, guid: 833e92c852b205a43beac617c1f90d7e, type: 2}
+  - {fileID: 186068, guid: 5156e5a8fe51c4246adddd5cf7571e4f, type: 2}
   spawnChanceCrate:
   - 10
-  - 40
-  - 40
+  - 20
+  - 20
   - 10
+  - 20
+  - 20
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
