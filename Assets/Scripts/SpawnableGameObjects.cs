@@ -8,17 +8,33 @@ public class SpawnableGameObjects : MonoBehaviour{
     //Inicializar variaveis
     public float spawningItemDelay = 3.0f;
     public float spawningCrateDelay = 5.0f;
+    
 
     private int weaponNumber = 0;
+
+    /*
     float zMinRange = -3.5f;
     float zMaxRange = 5;
     float xMinRange = -1;
     float xMaxRange = 6;
+    */
+
+    //publico a verificar
+
+    float zMinRange = 5f;
+    float zMaxRange = 8f;
+    float xMinRange = -3;
+    float xMaxRange = 9;
+    
+
+
+
     public int maxWpnNumber = 20;
 
     //prefab
     public GameObject[] spawnableObjects;
     public GameObject cratePrefab;
+    
 
     private float nextSpawnTime;
     private Vector3 newposition;
@@ -36,8 +52,10 @@ public class SpawnableGameObjects : MonoBehaviour{
         
         //determinar o spawn da proxima Crate
         StartCoroutine(Utils.CreateLoopCoroutine(MakeCrate, spawningCrateDelay));
-    }
 
+
+    }
+    
     //Spawn Arma
     void MakeWeapon(){
         Vector3 spawnPosition;
@@ -46,17 +64,19 @@ public class SpawnableGameObjects : MonoBehaviour{
         {
             //random coordinate in a rectangle
             spawnPosition.x = UnityEngine.Random.Range(xMinRange, xMaxRange);
-            spawnPosition.y = 5;
+            spawnPosition.y = 8;
             spawnPosition.z = UnityEngine.Random.Range(zMinRange, zMaxRange);
+            float power = UnityEngine.Random.Range(2f, 8f);
 
             //determine which object
-            if(spawnableObjects.Length > 0)
+            if (spawnableObjects != null && spawnableObjects.Length > 0)
             {
-                Instantiate(getRandomItem(), spawnPosition, new Quaternion());
+                GameObject newwpn = Instantiate(getRandomItem(), spawnPosition, new Quaternion()) as GameObject;
+                newwpn.GetComponent<Rigidbody>().AddForce(new Vector3(0,0,-1) * power, ForceMode.Impulse);
             }
         }
     }
-
+    
 
     void MakeCrate()
     {
