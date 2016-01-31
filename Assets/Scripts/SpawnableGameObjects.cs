@@ -34,7 +34,7 @@ public class SpawnableGameObjects : MonoBehaviour{
     //prefab
     public GameObject[] spawnableObjects;
     public GameObject cratePrefab;
-    
+    public GameObject[] Cratesitems;
 
     private float nextSpawnTime;
     private Vector3 newposition;
@@ -93,7 +93,7 @@ public class SpawnableGameObjects : MonoBehaviour{
             if (cratePrefab != null && spawnableObjects.Length > 0)
             {
                 GameObject newCrate = Instantiate(cratePrefab, spawnPosition, new Quaternion()) as GameObject;
-                newCrate.GetComponent<Crate>().Item = getRandomItem();
+                newCrate.GetComponent<Crate>().Item = getRandomItemCrate();
             }
         }
     }
@@ -101,6 +101,12 @@ public class SpawnableGameObjects : MonoBehaviour{
     public GameObject getRandomItem(){
         int objectToSpawn = UnityEngine.Random.Range(0, spawnableObjects.Length);
         return spawnableObjects[objectToSpawn];
+    }
+
+    public GameObject getRandomItemCrate()
+    {
+        int objectToSpawn = UnityEngine.Random.Range(0, Cratesitems.Length);
+        return Cratesitems[objectToSpawn];
     }
 
     public void IncrementItem(){
