@@ -51,10 +51,10 @@ class Inventory : MonoBehaviour
 			GUI.DrawTexture(new Rect(Screen.width - iconSpace*2f - xOffset*2f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), itemSlotBorder);
 			GUI.DrawTexture(new Rect(Screen.width - iconSpace*3f - xOffset*3f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), itemSlotBorder);
 
-			if (inventoryPlayer [0] != null) GUI.DrawTexture(new Rect(Screen.width - iconSpace*0f - xOffset*0f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), inventoryPlayer[0].getIcon());
-			if (inventoryPlayer [1] != null) GUI.DrawTexture(new Rect(Screen.width - iconSpace*1f - xOffset*1f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), inventoryPlayer[1].getIcon());
-			if (inventoryPlayer [2] != null) GUI.DrawTexture(new Rect(Screen.width - iconSpace*2f - xOffset*2f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), inventoryPlayer[2].getIcon());
-			if (inventoryPlayer [3] != null) GUI.DrawTexture(new Rect(Screen.width - iconSpace*3f - xOffset*3f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), inventoryPlayer[3].getIcon());
+			if (inventoryPlayer [3] != null) GUI.DrawTexture(new Rect(Screen.width - iconSpace*0f - xOffset*0f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), inventoryPlayer[3].getIcon());
+			if (inventoryPlayer [2] != null) GUI.DrawTexture(new Rect(Screen.width - iconSpace*1f - xOffset*1f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), inventoryPlayer[2].getIcon());
+			if (inventoryPlayer [1] != null) GUI.DrawTexture(new Rect(Screen.width - iconSpace*2f - xOffset*2f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), inventoryPlayer[1].getIcon());
+			if (inventoryPlayer [0] != null) GUI.DrawTexture(new Rect(Screen.width - iconSpace*3f - xOffset*3f - 2f*iconSpace, Screen.height - 2f*iconSize, iconSize, iconSize), inventoryPlayer[0].getIcon());
 		}
 	}
 }
