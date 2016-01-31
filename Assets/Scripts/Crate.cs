@@ -9,8 +9,9 @@ class Crate : MonoBehaviour{
     public GameObject Weapon;
 
     void OnTriggerEnter(Collider Col){
-        
-        Destroy(gameObject);
+
         Instantiate(Weapon, transform.position, new Quaternion());
+        Destroy(gameObject);
+        
     }
 }
