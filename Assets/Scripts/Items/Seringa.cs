@@ -3,6 +3,7 @@
 class Seringa : MonoBehaviour, IItem
 {
     private Texture2D texture;
+    public float healAmmount = 20;
 
     void Awake()
     {
@@ -19,11 +20,11 @@ class Seringa : MonoBehaviour, IItem
         return texture;
     }
 
-    IPlayer player;
     public void Use(IPlayer player)
     {
         player.ArmAnimator.SetTrigger("seringa");
-        StartCoroutine(Utils.ExecuteAfterTime(() => player.ArmAnimator.ResetTrigger("seringa"), 2));
+        if (player.NearEnimy != null)
+            player.NearEnimy.SendMessage("ChangeLife", healAmmount);
     }
 
     void OnCollisionEnter(Collision collision)

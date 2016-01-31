@@ -8,12 +8,17 @@ class Player : MonoBehaviour, IPlayer
     public float maxLife = 100;
     public int pushForce = 100000;
     public int Id = 1;
-    public GameObject opponent;
     public GameObject arm;
 
     private bool canPush = false;
     private Actuator actuator;
     private Inventory inventory;
+
+    private GameObject nearEnimy;
+    public GameObject NearEnimy
+    {
+        get { return nearEnimy; }
+    }
 
     private float lifeAmmount;
     public float LifeAmmount
@@ -56,10 +61,10 @@ class Player : MonoBehaviour, IPlayer
             UseItem(1);
         }
 
-        if (Input.GetButtonDown("Push" + Id) && canPush)
+        if (Input.GetButtonDown("Push" + Id) && NearEnimy != null)
         {
-            Vector3 directionToPush = (opponent.transform.position - this.gameObject.transform.position).normalized;
-            this.opponent.GetComponent<Actuator>().Push(directionToPush * pushForce);
+            Vector3 directionToPush = (NearEnimy.transform.position - gameObject.transform.position).normalized;
+            NearEnimy.GetComponent<Actuator>().Push(directionToPush * pushForce);
         }
     }
 
@@ -92,11 +97,11 @@ class Player : MonoBehaviour, IPlayer
 
     void OnTriggerEnter(Collider col)
     {
-        canPush = true;
+        nearEnimy = col.gameObject;
     }
 
     void OnTriggerExit(Collider col)
     {
-        canPush = false;
+        nearEnimy = null;
     }
 }

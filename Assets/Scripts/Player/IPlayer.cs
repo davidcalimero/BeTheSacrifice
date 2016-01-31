@@ -7,4 +7,5 @@ interface IPlayer
     bool PickUp(IItem item);
     void ChangeLife(float ammount);
     Animator ArmAnimator { get; }
+    GameObject NearEnimy { get; }
 }
