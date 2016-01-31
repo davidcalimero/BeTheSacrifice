@@ -55,6 +55,8 @@ class Player : MonoBehaviour, IPlayer
         if (actuator.IsOnFallState)
            return;
 
+		if (lifeAmmount <= 0) return;
+
         direction = new Vector3(Input.GetAxis("Horizontal" + Id), 0, Input.GetAxis("Vertical" + Id));
         actuator.Move(direction);
 
