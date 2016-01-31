@@ -83,10 +83,10 @@ public class SpawnableGameObjects : MonoBehaviour{
     void MakeCrate()
     {
 
-        float zMinRange = 5f;
-        float zMaxRange = 8f;
-        float xMinRange = -3;
-        float xMaxRange = 9;
+        float zMinRange = -3.7f;
+        float zMaxRange = 3.7f;
+        float xMinRange = -5;
+        float xMaxRange = 5;
 
         Vector3 spawnPosition;
 
