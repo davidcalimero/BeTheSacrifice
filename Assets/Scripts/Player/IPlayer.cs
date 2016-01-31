@@ -9,4 +9,5 @@ interface IPlayer
     void ChangeLife(float ammount);
     Animator ArmAnimator { get; }
     GameObject NearEnimy { get; }
+    void Push(Vector3 theForce);
 }

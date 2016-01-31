@@ -140,4 +140,9 @@ class Player : MonoBehaviour, IPlayer
     {
         nearEnimy = null;
     }
+
+    public void Push(Vector3 theForce)
+    {
+        actuator.Push(theForce);
+    }
 }
