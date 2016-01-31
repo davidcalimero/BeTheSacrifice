@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 55d3a52362c459d47997119d8d085315
-timeCreated: 1454180998
+guid: f8337dcecf7949140a5cd87ab4bfd7cc
+timeCreated: 1454203834
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Idle no arms_0
+    21300000: idle player 1_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -31,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: 2
-    aniso: 1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -51,7 +51,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Idle no arms_0
+    - name: idle player 1_0
       rect:
         serializedVersion: 2
         x: 0
