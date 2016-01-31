@@ -91,6 +91,8 @@ class Player : MonoBehaviour, IPlayer
         if(ammount > 0)
         {
             this.gameObject.GetComponentInChildren<Animator>().SetTrigger("activated");
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(MusicSingleton.Instance.GetHealth, 1f);
+
         }
 
         if (ammount < 0)

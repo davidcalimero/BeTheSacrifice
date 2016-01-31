@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 481434}
   - 114: {fileID: 11456024}
   - 114: {fileID: 11454960}
+  - 82: {fileID: 8203444}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -29,6 +30,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!82 &8203444
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154224}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &11454960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50,7 +125,7 @@ MonoBehaviour:
   ElectricShock: {fileID: 8300000, guid: 5d87a5f70010c8845ad745ea083d79d8, type: 3}
   Empurrar: {fileID: 8300000, guid: d12b0bcacd7bf93439587cebadcd4d87, type: 3}
   GameBackGroundTheme: {fileID: 8300000, guid: 7678f95a15d1fa140b246656843fb780, type: 3}
-  GetHealth: {fileID: 0}
+  GetHealth: {fileID: 8300000, guid: 65aadb0c93cc4f24d889a19fc0ece939, type: 3}
   MenuTheme: {fileID: 8300000, guid: ba1bf081c0a34ae4f95e33fe3df77357, type: 3}
   PickupItem: {fileID: 8300000, guid: 914a686098a4e154a9486d95bc9eae09, type: 3}
   RockHit: {fileID: 8300000, guid: 9350dede971f53a4abae9a699b8c53eb, type: 3}
@@ -67,7 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6501a3c7a7ef1b47bbdca0c2400a3c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newMusic: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
